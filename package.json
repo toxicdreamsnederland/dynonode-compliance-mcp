@@ -1,0 +1,28 @@
+{
+  "name": "dynonode-compliance-mcp",
+  "version": "1.0.0",
+  "description": "Deterministic WCAG 2.2 AA / US ADA / EU EAA static-HTML auditor and EU AI Act (2024/1689) risk classifier — Remote HTTP MCP Server, CLI & GitHub Action.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://wcag.dynonode.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toxicdreamsnederland/dynonode-compliance-mcp.git"
+  },
+  "bin": {
+    "dynonode-compliance": "./bin/cli.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "wcag",
+    "accessibility",
+    "eaa",
+    "ada",
+    "eu-ai-act",
+    "compliance",
+    "github-action"
+  ]
+}
