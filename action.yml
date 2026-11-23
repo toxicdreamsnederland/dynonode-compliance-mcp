@@ -1,0 +1,20 @@
+name: 'DynoNode WCAG 2.2 AA & EU EAA Compliance Audit'
+description: 'Runs a deterministic static-HTML WCAG 2.2 Level AA, US ADA Title III & EU EAA accessibility check against a live preview or production URL.'
+author: 'DynoNode (Toxic Dreams)'
+branding:
+  icon: 'shield'
+  color: 'blue'
+inputs:
+  url:
+    description: 'Public URL to inspect (e.g. https://staging.example.com)'
+    required: true
+  min_score:
+    description: 'Minimum static DOM score (0-100) before failing the CI step'
+    required: false
+    default: '70'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run WCAG 2.2 AA Static DOM Check
+      shell: bash
+      run: node "${{ github.action_path }}/bin/cli.mjs" audit "${{ inputs.url }}" "--min-score=${{ inputs.min_score }}"
