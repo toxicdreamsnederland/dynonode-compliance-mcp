@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.toxicdreamsnederland/dynonode-compliance-mcp",
+  "title": "DynoNode WCAG 2.2 AA & EU AI Act Compliance MCP",
+  "description": "Free zero-install remote Streamable-HTTP MCP server exposing audit_url_wcag22 (WCAG 2.2 AA / US ADA / EU EAA static-DOM check) and classify_eu_ai_act (Regulation 2024/1689 classifier).",
+  "websiteUrl": "https://wcag.dynonode.com",
+  "repository": {
+    "url": "https://github.com/toxicdreamsnederland/dynonode-compliance-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wcag.dynonode.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://aiact.dynonode.com/mcp"
+    }
+  ]
+}
