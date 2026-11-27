@@ -3,7 +3,7 @@ description: 'Runs a deterministic static-HTML WCAG 2.2 Level AA, US ADA Title I
 author: 'DynoNode (Toxic Dreams)'
 branding:
   icon: 'shield'
-  color: 'blue'
+  color: 'green'
 inputs:
   url:
     description: 'Public URL to inspect (e.g. https://staging.example.com)'
